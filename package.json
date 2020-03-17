@@ -1,5 +1,8 @@
 {
   "name": "atlas-obscura-tribute",
+  "Access-Control-Expose-Headers": "X-Total-Count",
+  "Access-Control-Allow-Methods": "POST, GET, OPTIONS, DELETE, PUT",
+  "Access-Control-Allow-Origin": "*" ,
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,6 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:4000",
   "eslintConfig": {
     "extends": "react-app"
   },
