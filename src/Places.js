@@ -10,7 +10,7 @@ function Places() {
 useEffect(() => {
     async function fetchData() {
       // You can await here
-      const response = await fetch('http://localhost:3000/places');
+      const response = await fetch('https://hidden-anchorage-29107.herokuapp.com/places');
       // ...
       const data = await response.json();
       setPlaces(data)
@@ -26,7 +26,7 @@ useEffect(() => {
             <li key={id}>Latitude: {p.lat} Longitude: {p.lng} Url: <a href={`https://atlasobscura.com/places/${p.id}`} class="btn cta bg"target="blank">Atlas Obscura Entry</a>
             </li>
             </>
-  );
+  );  
       useEffect(() => {
       return function logWillUnmount() {
         console.log("Unmounting place component");
