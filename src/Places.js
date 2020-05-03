@@ -22,8 +22,11 @@ useEffect(() => {
   const placesList = places.map(
     (p, id) => 
             <>
-            <img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzLzM1N2ZlYjZmLTUzMTUtNDUyMC1hZGVmLWEwNDkxZjU5ZWU3YjkwYWFiNzBmYmI2YzZkY2Y0MF9lZGl0ZWQtOTI1Ni5qcGciXSxbInAiLCJ0aHVtYiIsIngzOTA-Il0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDgxIC1hdXRvLW9yaWVudCJdXQ/edited-9256.jpg" alt={p.lat} height="777" width="777" />
+            <img src={p.img} alt={p.name} height="777" width="777" />
+            <figcaption>{p.img_credit}</figcaption>
             <h2>{p.name}</h2>
+            <h3>{p.location}</h3>
+            <h4>{p.description}</h4>
             <li key={id}>Latitude: {p.lat} Longitude: {p.lng} Url: <a href={`https://atlasobscura.com/places/${p.id}`} class="btn cta bg"target="blank">Atlas Obscura Entry</a>
             </li>
             </>
