@@ -2,6 +2,8 @@ Tribute to Atlas Obscura
 
 ## Live Site: https://atlasobscura-tribute.netlify.app/ 
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cbd3062d-3af1-4a66-ba93-871a6c8526dd/deploy-status)](https://app.netlify.com/sites/atlasobscura-tribute/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
