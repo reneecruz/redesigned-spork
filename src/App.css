@@ -190,3 +190,10 @@ a:link, a:visited {
     margin: 0;
     content: "🌎 🔮 🖤 ";
   }
+
+input[type=text] {
+  border: none;
+  border-bottom: 3px solid #8842d5;  
+  outline: none;
+}
+
